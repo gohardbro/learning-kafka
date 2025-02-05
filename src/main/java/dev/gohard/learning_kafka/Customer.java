@@ -3,11 +3,11 @@ package dev.gohard.learning_kafka;
 import lombok.Getter;
 
 @Getter
-public class Customor {
+public class Customer {
     private int id;
     private String name;
 
-    public Customor(int id, String name) {
+    public Customer(int id, String name) {
         this.id = id;
         this.name = name;
     }

@@ -5,12 +5,12 @@ import java.nio.ByteBuffer;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Serializer;
 
-import dev.gohard.learning_kafka.Customor;
+import dev.gohard.learning_kafka.Customer;
 
-public class CustomerSerializer implements Serializer<Customor> {
+public class CustomerSerializer implements Serializer<Customer> {
 
     @Override
-    public byte[] serialize(String topic, Customor data) {
+    public byte[] serialize(String topic, Customer data) {
         try {
             byte[] serializedName;
             int stringSize;
