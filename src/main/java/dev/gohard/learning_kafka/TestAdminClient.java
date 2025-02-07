@@ -19,7 +19,5 @@ public class TestAdminClient {
         topics.names().get().forEach(System.out::println);
 
         admin.close(Duration.ofSeconds(30));
-        
-        
     }
 }
